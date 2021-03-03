@@ -2,6 +2,7 @@ let allBolloon = document.querySelector('.all-bolloon__amount')
 let allBolloonPoints = 0
 let count = document.querySelector('.count__amount')
 let points = 0
+let finish = document.querySelector('.finish')
 
 function balloonCreate() {
 	//Создаем шар
@@ -60,6 +61,7 @@ function balloonCreate() {
 			balloon.remove()
 			points++
 			count.innerHTML = points
+			finish.innerHTML = points
 		}
 		//end
 		//удаляем оставшиеся шарики

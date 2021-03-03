@@ -22,5 +22,7 @@ let start = new Promise((resolve) => {
 	setInterval(() => {
 		if (i == 35 || (i < 35 && i > 0))
 			balloonCreate()
+		if (i == 0)
+			document.querySelector('.result__wrapper').style.opacity = '1'
 	}, 400)
 })
