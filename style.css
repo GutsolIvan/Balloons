@@ -1,0 +1,25 @@
+body .display {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+body .display .all-bolloon {
+  text-align: center;
+  color: red;
+  font-size: 50px;
+}
+body .display .timer {
+  font-size: 400px;
+  text-align: center;
+  opacity: 0.1;
+}
+body .display .count__wrapper {
+  text-align: center;
+  font-size: 50px;
+}
+body .balloon {
+  position: absolute;
+}
