@@ -1,9 +1,13 @@
 let start = new Promise((resolve) => {
+	setTimeout(() => {
+		document.querySelector('.pop-up__wrapper').style.opacity = '0'
+		resolve()
+	}, 5000)
+}).then(() => {
 	setInterval(() => {
 		if (i == 90 || (i < 90 && i > 75))
 			balloonCreate()
 	}, 1000)
-	resolve()
 }).then(() => {
 	setInterval(() => {
 		if (i == 75 || (i < 75 && i > 50))

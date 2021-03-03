@@ -1,4 +1,31 @@
 body {
+	background-color: black;
+	.pop-up__wrapper{
+		position: absolute;
+		background-color: black;
+		z-index: 1000 ;
+		width: 100%;
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		opacity: 1;
+		transition: 2s;
+		.pop-up{
+			margin: 0 auto;
+			background-color: blueviolet;
+			width: 50vw;
+			height: 50vh;
+			padding: 2vh;
+			.salutation{
+				text-align: center;
+				font-family: 'DotGothic16', sans-serif;
+				font-size: 100px;
+				text-transform:uppercase;
+				letter-spacing: 1vw;
+			}
+		}
+	}
 	.display{
 		position: absolute;
 		width: 100%;
@@ -6,6 +33,7 @@ body {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
+		color: blanchedalmond;
 		.all-bolloon{
 			text-align: center;
 			color: red;
