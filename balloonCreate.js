@@ -11,7 +11,7 @@ function balloonCreate() {
 	balloon.style.display = 'none'
 	balloon.style.zIndex = '3'
 	//Цвет шара
-	const colorsBalloon = ['./img/black.png', './img/blue.png', './img/green.png', './img/orange.png', './img/pinck.png', './img/red.png', './img/yellow.png']
+	const colorsBalloon = ['./img/purple.png', './img/turquoise.png', './img/white.png', './img/blue.png', './img/green.png', './img/orange.png', './img/pinck.png', './img/red.png', './img/yellow.png']
 	function colorsRandom() {
 		let random = Math.floor(Math.random() * colorsBalloon.length)
 		if (random > 6) {
@@ -57,7 +57,7 @@ function balloonCreate() {
 		bolloonBottom = bolloonBottom + step
 		balloon.style.display = 'block'
 		//удаляем шарик при соприкосновении с иголкой
-		if (Math.abs((balloon.offsetTop - (needle.offsetHeight - 6))) < 4 && Math.abs(((needle.offsetLeft + needle.clientWidth / 2) - (balloon.offsetLeft + balloon.clientWidth / 2))) < balloon.clientWidth) {
+		if (Math.abs((balloon.offsetTop - (needle.offsetHeight - step))) < 4 && Math.abs(((needle.offsetLeft + needle.clientWidth / 2) - (balloon.offsetLeft + balloon.clientWidth / 2))) < balloon.clientWidth) {
 			balloon.remove()
 			points++
 			count.innerHTML = points

@@ -1,6 +1,7 @@
 let start = new Promise((resolve) => {
 	setTimeout(() => {
-		document.querySelector('.pop-up__wrapper').style.opacity = '0'
+		document.querySelector('.pop-up__wrapper').style.display = 'none'
+		document.querySelector('.reload').style.zIndex = '1000'
 		resolve()
 	}, 5000)
 }).then(() => {

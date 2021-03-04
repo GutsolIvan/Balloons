@@ -1,6 +1,16 @@
 body {
   background-color: black;
 }
+body .reload {
+  position: absolute;
+  right: 3vw;
+  bottom: 3vh;
+  color: aliceblue;
+  font-size: 50px;
+}
+body .reload:hover {
+  color: #c7cccf;
+}
 body .pop-up__wrapper {
   position: absolute;
   background-color: black;
@@ -11,7 +21,6 @@ body .pop-up__wrapper {
   flex-direction: column;
   justify-content: center;
   opacity: 1;
-  transition: 2s;
 }
 body .pop-up__wrapper .pop-up {
   margin: 0 auto;
